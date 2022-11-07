@@ -4,13 +4,23 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2020-12-16 12:29:08.610352",
+ "modified": "2021-07-29 11:48:20.069920",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "dashboard-view",
  "owner": "Administrator",
  "page_name": "dashboard-view",
- "roles": [],
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Employee"
+  }
+ ],
  "script": null,
  "standard": "Yes",
  "style": null,

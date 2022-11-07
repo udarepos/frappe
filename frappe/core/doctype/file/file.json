@@ -175,7 +175,7 @@
  "icon": "fa fa-file",
  "idx": 1,
  "links": [],
- "modified": "2020-06-28 12:21:30.772386",
+ "modified": "2022-02-16 13:19:07.263719",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "File",
@@ -204,6 +204,16 @@
    "read": 1,
    "report": 1,
    "role": "All",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Employee",
    "share": 1,
    "write": 1
   }

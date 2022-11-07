@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "creation": "2021-09-01 21:10:46.622343",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "special_interest_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "special_interest_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Special Interest Name",
+   "options": "Special Interest",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-02 16:40:26.969026",
+ "modified_by": "Administrator",
+ "module": "Geo",
+ "name": "Special Interests",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

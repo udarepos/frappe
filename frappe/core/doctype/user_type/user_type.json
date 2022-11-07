@@ -37,8 +37,7 @@
    "fieldtype": "Table",
    "label": "Document Types",
    "mandatory_depends_on": "eval: !doc.is_standard",
-   "options": "User Document Type",
-   "read_only": 1
+   "options": "User Document Type"
   },
   {
    "fieldname": "role",
@@ -46,16 +45,13 @@
    "in_list_view": 1,
    "label": "Role",
    "mandatory_depends_on": "eval: !doc.is_standard",
-   "options": "Role",
-   "read_only": 1
+   "options": "Role"
   },
   {
    "fieldname": "select_doctypes",
    "fieldtype": "Table",
-   "hidden": 1,
    "label": "Document Types (Select Permissions Only)",
-   "options": "User Select Document Type",
-   "read_only": 1
+   "options": "User Select Document Type"
   },
   {
    "fieldname": "column_break_4",
@@ -67,8 +63,7 @@
    "fieldtype": "Link",
    "label": "Apply User Permission On",
    "mandatory_depends_on": "eval: !doc.is_standard",
-   "options": "DocType",
-   "read_only": 1
+   "options": "DocType"
   },
   {
    "depends_on": "eval: !doc.is_standard",
@@ -81,8 +76,7 @@
    "fieldname": "user_id_field",
    "fieldtype": "Select",
    "label": "User Id Field",
-   "mandatory_depends_on": "eval: !doc.is_standard",
-   "read_only": 1
+   "mandatory_depends_on": "eval: !doc.is_standard"
   },
   {
    "depends_on": "eval: !doc.is_standard",
@@ -95,8 +89,7 @@
    "fieldtype": "Table",
    "no_copy": 1,
    "options": "User Type Module",
-   "print_hide": 1,
-   "read_only": 1
+   "print_hide": 1
   },
   {
    "fieldname": "custom_select_doctypes",
@@ -107,7 +100,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-12 16:25:18.639050",
+ "modified": "2021-08-10 21:00:41.268877",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User Type",
@@ -125,6 +118,7 @@
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,

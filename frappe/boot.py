@@ -329,3 +329,6 @@ def get_desk_settings():
 
 def get_notification_settings():
 	return frappe.get_cached_doc('Notification Settings', frappe.session.user)
+
+from workspaceperms.utils.overrides import load_desktop_data_v2
+load_desktop_data = load_desktop_data_v2

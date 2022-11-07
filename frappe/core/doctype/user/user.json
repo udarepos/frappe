@@ -2,6 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
+ "autoname": "field:id_no",
  "creation": "2014-03-11 14:55:00",
  "description": "Represents a User in the system.",
  "doctype": "DocType",
@@ -11,14 +12,15 @@
   "section_break_3",
   "email",
   "last_name",
-  "language",
+  "id_no",
   "column_break0",
   "first_name",
   "full_name",
-  "time_zone",
+  "language",
   "column_break_11",
   "middle_name",
   "username",
+  "time_zone",
   "send_welcome_email",
   "unsubscribed",
   "user_image",
@@ -606,6 +608,13 @@
    "fieldtype": "Link",
    "label": "Module Profile",
    "options": "Module Profile"
+  },
+  {
+   "fieldname": "id_no",
+   "fieldtype": "Data",
+   "label": "ID/Passport",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "icon": "fa fa-user",
@@ -669,7 +678,7 @@
   }
  ],
  "max_attachments": 5,
- "modified": "2021-10-27 17:17:16.098457",
+ "modified": "2022-03-06 12:33:37.865925",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
@@ -690,9 +699,15 @@
    "write": 1
   },
   {
-   "permlevel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
    "read": 1,
-   "role": "System Manager",
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
    "write": 1
   }
  ],

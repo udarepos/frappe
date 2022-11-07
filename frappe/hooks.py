@@ -3,18 +3,18 @@ from . import __version__ as app_version
 
 
 app_name = "frappe"
-app_title = "Frappe Framework"
-app_publisher = "Frappe Technologies"
-app_description = "Full stack web framework with Python, Javascript, MariaDB, Redis, Node"
+app_title = "UDA Portal"
+app_publisher = "UNITED DEMOCRATIC ALLIANCE"
+app_description = "Hustler Nation web portal"
 app_icon = "octicon octicon-circuit-board"
 app_color = "orange"
 source_link = "https://github.com/frappe/frappe"
 app_license = "MIT"
-app_logo_url = '/assets/frappe/images/frappe-framework-logo.svg'
+app_logo_url = '/assets/frappe/images/uda-logo.svg'
 
 develop_version = '13.x.x-develop'
 
-app_email = "info@frappe.io"
+app_email = "info@uda.ke"
 
 docs_app = "frappe_io"
 

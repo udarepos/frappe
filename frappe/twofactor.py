@@ -279,7 +279,7 @@ def send_token_via_sms(otpsecret, token=None, phone_no=None):
 
 	hotp = pyotp.HOTP(otpsecret)
 	args = {
-		ss.message_parameter: 'Your verification code is {}'.format(hotp.at(int(token)))
+		ss.message_parameter: 'Your verification code is {}. Dial *811*194# to get Winning Team SKIZA tune.'.format(hotp.at(int(token)))
 	}
 
 	for d in ss.get("parameters"):

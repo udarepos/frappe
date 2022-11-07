@@ -157,7 +157,7 @@ class LoginManager:
 
 	def get_user_info(self):
 		self.info = frappe.db.get_value("User", self.user,
-			["user_type", "first_name", "last_name", "user_image"], as_dict=1)
+			["user_type", "first_name", "last_name", "user_image","id_no","redirect_url"], as_dict=1)
 
 		self.user_type = self.info.user_type
 
@@ -182,7 +182,7 @@ class LoginManager:
 			frappe.local.cookie_manager.set_cookie("system_user", "yes")
 			if not resume:
 				frappe.local.response['message'] = 'Logged In'
-				frappe.local.response["home_page"] = "/app"
+				frappe.local.response["home_page"] = self.info.redirect_url or "/app"
 
 		if not resume:
 			frappe.response["full_name"] = self.full_name
